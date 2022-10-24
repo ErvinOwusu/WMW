@@ -78,5 +78,10 @@ ul li a:hover{
 }
 
 .aboutUs {
-    color: white
+    color: white;
+}
+
+.images2 {
+    height: 30%;
+    width: 30%;
 }
