@@ -14,22 +14,19 @@ tertiary color: #CF7500
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 /* font-family: 'Quicksand', sans-serif; */
 
-
-body{
+html {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
     background-color: #1F1F1F;
 }
-
 .contactDetails{
     color: white;
 }
 
 .aboutUs {
-<<<<<<< HEAD
-    color: white
-}
-
-/* -------------------------- NAVBAR --------------------------*/
-=======
     color: white;
 }
 
@@ -37,4 +34,8 @@ body{
     height: 30%;
     width: 30%;
 }
->>>>>>> 7331e276f31f53b6ba895d9b8547cd7742468f3b
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
