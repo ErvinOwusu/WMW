@@ -24,7 +24,17 @@ body{
 }
 
 .aboutUs {
+<<<<<<< HEAD
     color: white
 }
 
 /* -------------------------- NAVBAR --------------------------*/
+=======
+    color: white;
+}
+
+.images2 {
+    height: 30%;
+    width: 30%;
+}
+>>>>>>> 7331e276f31f53b6ba895d9b8547cd7742468f3b
