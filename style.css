@@ -31,6 +31,16 @@ body {
     color: white;
 }
 
+.questionTitle{
+    text-align: center;
+    margin: 0.6rem;
+}
+
+.questions{
+    margin: 0.6rem;
+    color: grey;
+}
+
 .images2 {
     height: 30%;
     width: 30%;
