@@ -14,6 +14,34 @@
 
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="stylesheet" href="nav.css" type="text/css" />
+    
+    <style>
+        .collapsible {
+            color: white;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          outline: none;
+          font-size: 29px;
+          text-align: center; 
+          background: rgba(0, 0, 0, 0); 
+          font-family: 'Rubik', sans-serif;
+        }
+        
+        .active, .collapsible:hover {
+          color: #999999;
+        }
+    
+        .content {
+          padding: 0 18px;
+          display: none;
+          overflow: hidden;
+          text-align: center; 
+          font-size: 20px; 
+          border-left: 0px solid white;
+        }
+    </style>
     </head>
     
     <body>
@@ -43,22 +71,75 @@
     
     <div class = "questionTitle">
         <br>
-        <h2 style = "color:blue"> General Questions </h2>   
+        <h2 style="color: white; font-family: 'Quicksand', sans-serif; font-weight: bold; font-size: 3rem;"> Frequently Asked Questions </h2>   
         <br>
     </div>
-    
-    <div class = "questions">
-        <h3 style = "text-align: center">What are we selling?</h3>
-        <h4 style = "text-align: center">We currently sell custom chess pieces, competition axes, as well as metal signs. 
+    <!--
+    <div class = "questions" style="color: white; text-align: center;">
+        <button type="button" class="collapsible">What are we selling?</button>
+        <h4 class="content">We currently sell custom chess pieces, competition axes, as well as metal signs. 
         But, we are currently looking to expand our product selection to create more products that our customers will enjoy!</h4>
         <br>
-        <h3 style = "text-align: center">Where can you find us</h3>
-        <h4 style = "text-align: center">The best place to find us is where you are, please visit the “contact us” page to find the address and all contact information.</h4>
+        <button type="button" class="collapsible">Where can you find us</button>
+        <h4 class="content">The best place to find us is where you are, please visit the “contact us” page to find the address and all contact information.</h4>
         <br>
         <h3 style = "text-align: center">Any other questions?</h3>
         <h4 style = "text-align: center">Contact us for any issues or problems you may have. We will get to you as soon as we could</h4>
     </div>
+    -->
+    
+    <div style="font-family: 'Quicksand', sans-serif;">
+        <table style="color: white; border-left: 4px solid white;">
+            <tr>
+                <td> <div style="padding-left: 20px; font-size: 4rem;"> Q </div> </td>
+                <td> <div style="padding-left: 20px; font-size: 2rem;"> What are we selling?</div> </td>
+            </tr>
+        </table>
+        <table style="color: #c7c6c5; border-left: 4px solid #c7c6c5;">
+            <tr>
+                <td> <div style="padding-left: 20px; font-size: 4rem;"> A </div> </td>
+                <td> <div style="padding-left: 20px; font-size: 1.5rem;"> We currently sell custom chess pieces, competition axes, as well as metal signs. 
+        We are currently looking to expand our product selection to create more products that our customers will enjoy! </div> </td>
+            </tr>
+        </table>
+        
+        <br>
+        
+        <table style="color: white; border-left: 4px solid white;">
+            <tr>
+                <td> <div style="padding-left: 20px; font-size: 4rem;"> Q </div> </td>
+                <td> <div style="padding-left: 20px; font-size: 2rem;"> Where can you find us?</div> </td>
+            </tr>
+        </table>
+        <table style="color: #c7c6c5; border-left: 4px solid #c7c6c5;">
+            <tr>
+                <td> <div style="padding-left: 20px; font-size: 4rem;"> A </div> </td>
+                <td> <div style="padding-left: 20px; font-size: 1.5rem;"> Please visit the <a href="contactus.html"> Contact Us </a> page to find the address and all contact information. </div> </td>
+            </tr>
+        </table>
+        <div style="text-align: center; color: white; font-size: 2rem; padding: 4rem 0 0 0;"> Any Other Questions? </div>
+        <div style="text-align: center; color: #c7c6c5; font-size: 1.5rem; padding-bottom: 5rem;"> Contact us with any issues or problems you may have,
+        and we will get back to you as soon as possible!</div>
+    </div>
 
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 <!-- 
   <div class="dropdown">
   <span>Mouse over me</span>

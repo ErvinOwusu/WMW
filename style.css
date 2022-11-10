@@ -22,6 +22,15 @@ body {
     padding: 0;
     background-color: #1F1F1F;
 }
+
+a {
+    transition: color .5s;
+    color: #f0a500;
+}
+
+a:hover {
+    color: #f7dda1;
+}
 .contactDetails{
     color: white;
     margin: 0.4rem;
