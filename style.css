@@ -63,3 +63,19 @@ a:hover {
 .marketing {
     
 }
+
+.bright {
+    transition:  filter .2s;
+}
+
+.bright:hover {
+    filter: brightness(170%);
+}
+
+.zoom {
+    transition: scale .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.02);
+}

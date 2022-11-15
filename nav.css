@@ -15,6 +15,8 @@
     margin: 0;
     padding: 0;
     display: flex;
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 2px 2px 0 #000;
 }
 
 .navbar-links li {

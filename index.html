@@ -13,13 +13,67 @@
 
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="stylesheet" href="nav.css" type="text/css" />
+
+    <style>
+        .section {
+            padding:90px 30px 60px 30px; 
+            background-color: #4e4e4e;
+        }
+
+        .title1 {
+            padding-bottom: 20px;
+            padding-top: 40px; 
+            font-size: 3.5rem;
+            font-weight: bold;
+            text-shadow: 4px 4px 0px black;
+        }
+
+        .desc1 {
+            padding: 0 150px 0 150px; 
+            line-height: 3rem; 
+            text-align: center; 
+            font-family: 'Quicksand', sans-serif; 
+            color: #white; 
+            font-size: 1.8rem;
+            font-weight: normal;
+            display: block;
+        }
+
+        .button-seeAll {
+            font-size: 1.5rem; 
+            border: 1px solid white;
+            background: #4e4e4e; 
+            border-radius: 5px; 
+            color: white; 
+            padding: 2px 50px 2px 50px;
+        }
+
+        .button-seeProducts {
+            border-radius: 5px;
+            color: white;
+            font-size: 2rem;
+            font-size: 1.5rem; 
+            border: 1px solid white;
+            background: 0; 
+            border-radius: 3em; 
+            color: white; 
+            padding: 12px 75px;
+            border: 2px solid rgba(255, 255, 255);
+            
+            transition:  filter .2s;
+        }
+
+        .button-seeProducts:hover {
+            filter: brightness(170%);
+        }
+    </style>
     </head>
     
     <body>
         <!---------------------------------------- NAVIGATION ---------------------------------------->
         <nav class="navbar">
             <!-- Logo -->
-            <div class="logo"><img src="images/Main Logo(4).png" width="200"></div>
+            <div class="logo"><a href="index.html"><img src="images/WM icon 2.png" width="90"></a></div>
             <!-- Hamburger Toggle -->
             <a href="#" class="toggle-button">
                 <span class="bar"></span>
@@ -29,9 +83,9 @@
             <!-- Page Navigation Links -->
             <div class="navbar-links">
                 <ul>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="aboutus.html">About Us</a></li>
-                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                 </ul>
             </div>
@@ -39,58 +93,81 @@
         <script type="text/javascript" src="javascript.js"></script>
         
         <!------------------------------------- SECTION #1 (HEADER)  ------------------------------------->
-        <div style="padding:80px 30px 100px 30px; background: #1F1F1F;">
-        <div style="text-align: center; font-size: 4rem; font-weight: bold; color: white; line-height: 1rem;">
-            <img src="images\Main Logo(4).png" width="650"> 
-            <br>
-            <span style="font-size: 1.3rem; font-family: 'Quicksand', sans-serif;"> The first and only sutdent-led small production 
-            in the United States that features advanced manufacturing</span>
+        <div style="background: url(images/testBackground4.png); 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;">
+
+            <!--
+            <img src="images\testBackground2.png" style="width: 100%;">
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 4rem;"> 
+                <img src="images\Main Logo(4).png" width="650"> 
+            </div>
+            <div style="position: absolute; transform: translate(50%, -770%); ;"> 
+                <span style="font-size: 1.3rem; font-family: 'Quicksand', sans-serif; color: white; font-weight: bold; text-shadow: 2px 2px 0 #000;"> The first and only sutdent-led small production in the United States that features advanced manufacturing</span>
+                </div>
+            </div>
+            -->
+            
+
+            <div style="padding:80px 30px 100px 30px;">
+                <div style="text-align: center; font-size: 4rem; font-weight: bold; color: white; line-height: 1rem;">
+                    <img src="images\Main Logo(4).png" width="650"> 
+                    <br>
+                    <span style="font-size: 1.7rem; font-family: 'Quicksand', sans-serif; text-shadow: 2px 2px 0 #000; color: #FFF;"> The first and only sutdent-led small production 
+                    in the United States that features advanced manufacturing</span>
+                    <a href="products.html"> <div style="padding-top: 1.5rem;"> <button class="button-seeProducts"> See Products </button> </div> </a>
+                    
+                </div>
+            </div>
+            
         </div>
-    </div>
+        
     
     <!---------------------------------------- SECTION #2 ---------------------------------------->
-    <div style="padding:90px 30px 60px 30px; background-color: #4e4e4e;">
-        <div style="text-align: center; font-size: 3.4rem; font-weight: bold; color: #FFF; font-family: 'Quicksand', sans-serif; padding-bottom: 20px; padding-top: 40px;"> 
-        <i> <span style="text-shadow: 4px 4px 0px black;">OUR MISSION</span></i> 
-        <br>
-    <span style="font-family: 'Quicksand', sans-serif; color: white; font-size: 24px; font-weight: normal; display: block; padding: 0 12rem 0 12rem;">
-        Is to become the premier high school, student operated, metal fabrication business in the United States.
+    <div class="section">
+        <div style="text-align: center; color: #FFF; font-family: 'Quicksand', sans-serif;"> 
+        <i> <span class="title1">OUR MISSION</span></i> 
+        
+    <span style="font-size: 1.7rem; font-weight: normal; display: block; padding: 0 12rem 4rem 12rem; text-shadow: 2px 2px 0 #000;">
+        <i> Is to become the premier high school, student operated, metal fabrication business in the United States.</i>
     </span>
         <br>
         <div style="display: flex; flex-direction: row;">
-            <span style="padding-left: 50px;"> <img src="images/Welding of Axe Head.jpg" width="390" align="left"> </span>
-    <span style="padding: 0 150px 0 150px; line-height: 40px; text-align: left; font-family: 'Quicksand', sans-serif; color: #white; font-size: 22px; font-weight: normal; display: block;">
+            <span style="padding-left: 50px;"> <img src="images/Welding of Axe Head.jpg" width="400" align="left"> </span>
+    <span class="desc1">
         Turn your ideas into a forged treasure. With our custom-made metal signs we have the ability to createa  product that will
         reflect your personality. our luminous powder coated finish gaurantees any design will be perfect for the space you are
         creating. From sports themes to unique family crests, the posibilities with our design team are endless! Add LEDs for a unique modern flair.
         <br>
         <br>
-        <button style="border: 1px solid white; background: #4e4e4e; border-radius: 5px; color: white; padding: 10px 20px 10px 20px;">SEE ALL  ➜</button>
+        <a href="products.html"><button class="bright button-seeAll"> SEE ALL  ➜</button></a>
             </span>
             </div>
         </div>
     </div>
     <!---------------------------------------- SECTION #3 ---------------------------------------->
     <div style="padding:90px 30px 60px 30px; background-color: #1F1F1F;">
-        <div style="text-align: center; font-size: 3.4rem; font-weight: bold; color: #FFF; font-family: 'Quicksand', sans-serif; padding-bottom: 20px; padding-top: 40px;"> 
-        <i> <span style="text-shadow: 4px 4px 0px black;">OUR VISION</span></i> 
-        <br>
-    <span style="font-family: 'Quicksand', sans-serif; color: white; font-size: 24px; font-weight: normal; display: block; padding: 0 12rem 0 12rem;">
-        To supply end users, custom metal fabrication products, ranging from competition level axes to powder coated metal signs.
-    </span>
-        <br>
-        <div style="display: flex; flex-direction: row;">
-            <span style="padding-left: 50px;"> <img src="images/Welding 2.jpg" width="390" align="left"> </span>
-    <span style="padding: 0 150px 0 150px; line-height: 40px; text-align: left; font-family: 'Quicksand', sans-serif; color: #white; font-size: 22px; font-weight: normal; display: block;">
-        Cut through the competiton. The only premium American-Made competition axe on the market, sold at an affordable price with uncompromising quality and durability. 
-        Designed to last and handcrafted in our state-of-the-art facility using only the finest cold-rolled steel and hickory handle.
-        Includes a pinned head to ensure safety and offered in two sizes (Heavy and Light). Balanced for precision throwing to nail the bullseye every time.
-        Reach out to our team to discuss bulk ordering, custom colors, and personalization options.
-        <br>
-        <br>
-        <button style="border: 1px solid white; background: #1F1F1F; border-radius: 5px; color: white; padding: 10px 20px 10px 20px;">SEE ALL  ➜</button>
+        <div style="text-align: center; font-size: 3rem; font-weight: bold; color: #FFF; font-family: 'Quicksand', sans-serif; padding-bottom: 20px; padding-top: 40px;"> 
+            <i> <span style="text-shadow: 4px 4px 0px black;">OUR VISION</span></i> 
+                <br>
+            <span style="font-family: 'Quicksand', sans-serif; color: white; font-size: 24px; font-weight: normal; display: block; padding: 0 12rem 0 12rem;">
+                To supply end users, custom metal fabrication products, ranging from competition level axes to powder coated metal signs.
             </span>
-            </div>
+            <br>
+            <div style="display: flex; flex-direction: row;">
+                <span style="padding-left: 50px;"> <img src="images/Welding 2.jpg" width="390" align="left"> </span>
+        <span style="padding: 0 150px 0 150px; line-height: 40px; text-align: left; font-family: 'Quicksand', sans-serif; color: #white; font-size: 22px; font-weight: normal; display: block;">
+            Cut through the competiton. The only premium American-Made competition axe on the market, sold at an affordable price with uncompromising quality and durability. 
+            Designed to last and handcrafted in our state-of-the-art facility using only the finest cold-rolled steel and hickory handle.
+            Includes a pinned head to ensure safety and offered in two sizes (Heavy and Light). Balanced for precision throwing to nail the bullseye every time.
+            Reach out to our team to discuss bulk ordering, custom colors, and personalization options.
+            <br>
+            <br>
+            <button style="border: 1px solid white; background: #1F1F1F; border-radius: 5px; color: white; padding: 2px 20px 2px 20px;">SEE ALL  ➜</button>
+                </span>
+                </div>
         </div>
     </div>
     
