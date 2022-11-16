@@ -73,9 +73,24 @@ a:hover {
 }
 
 .zoom {
-    transition: scale .2s;
+    transition: transform .2s;
 }
 
 .zoom:hover {
     transform: scale(1.02);
+}
+
+.zoom-bright:hover {
+    transform: scale(1.04);
+    filter: brightness(90%);
+}
+.zoom-bright {
+    transition: transform .2s, filter .2s; /* Animation */
+}
+
+.dim:hover {
+    filter: brightness(0%);
+}
+.dim {
+    transition: filter .5s;
 }

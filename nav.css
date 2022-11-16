@@ -16,13 +16,13 @@
     padding: 0;
     display: flex;
     font-family: 'Quicksand', sans-serif;
-    text-shadow: 2px 2px 0 #000;
+    text-shadow: 2px 2px 2px #000;
 }
 
 .navbar-links li {
     list-style: none;
     padding: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.05rem;
 }
 
 .navbar-links li a {
