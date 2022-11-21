@@ -23,6 +23,7 @@
             color: white; 
             padding: 10px 20px 10px 20px;
             width: 26%;
+            cursor: pointer;
         }
         
         .header {
@@ -37,7 +38,69 @@
             color: #C5C5C5;
             font-family: 'Quicksand', cursive;
         }
+        
+        .form-popup {
+          display: none;
+          position: absolute;
+          right: 15px;
+          border: 3px solid #f1f1f1;
+          z-index: 9;
+        }
+        
+        .form-container {
+  max-width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
     </style>
+    
+    <script>
+        function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+    </script>
     </head>
     
     <body>
@@ -73,10 +136,28 @@
                 <div class="desc" style="padding-bottom: 20px;"> Our custom-made 32-piece chess set offers a sophisticated product for those enthusiastic chess player or collectors.
                         These finally crafted pieces are fabricated in various metal options ranging from aluminum to brass; appealing to every customer's budget.
                         Satisfaction guarnteed</div>
-                        <button class="button">PURCHASE  ➜</button>
+                        <button class="button open-button" onclick="openForm()">PURCHASE  ➜</button>
+                        
+<!-- The form -->
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
             </div>
             <img src="images/Chess Pieces.JPG" width="360" style="padding-left: 30px; filter: drop-shadow(7px 7px 1px #000);">
         </div>
+        
+        
         <!--
         <div style="padding: 0 5rem 0 5rem">
             <table>
