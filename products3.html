@@ -46,7 +46,7 @@
         }
 
         .img-style {
-            width: 300px;
+            width: 250px;
             align-self: center;
             border: 1.6px solid #FFF;
             box-shadow: 5px 5px 50px #000;
@@ -66,6 +66,7 @@
             padding-top: 10px; 
             font-size: 1rem;
             padding-bottom: 18px;
+            font-size: .9rem;
         }
 
         .input {
@@ -76,7 +77,7 @@
             border-top: 0;
             border-left: 0;
             border-right: 0;
-            border-bottom: 1px solid;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.3);
         }
 
         #container {
@@ -100,27 +101,27 @@
     z-index:41;
     top: 25%;
     padding:30px; 
-    -webkit-box-shadow:0 0 10px rgba(0,0,0,0.4);
-    -moz-box-shadow:0 0 10px rgba(0,0,0,0.4); 
-    box-shadow:0 0 10px rgba(0,0,0,0.4);
     border-radius: 20px;
 }
         </style>
     </head>
     
     <body>
-
+<! ------------------------------------------- FORM POP-UP ------------------------------------------->
 <div id="container">
 <div id="exampleModal" class="reveal-modal">
     <a href="#" style="color: #000; font-size: 2rem;">X</a>
      <div style="text-align: center; font-size: 3rem; font-weight: bold; font-family: 'Rubik', sans-serif; color: #000;"> CUSTOM CHESS PIECES</div>
-     <div class="desc" style="color: #000; text-align: center; font-size: 1.3rem; text-align: left;">Our custom-made 32-piece chess set offers a sophisticated product for those enthusiastic chess player or collectors. These finally crafted pieces are fabricated in various metal options ranging from aluminum to brass; appealing to every customer's budget. Satisfaction guarnteed</div>
+      <center>
+      <img style="width: 260px; border: 2.5px solid black; border-radius: 30px; border-style: block;" src="images/Chess Pieces.JPG">
+      </center>
+     <div class="desc" style="color: #000; text-align: center; font-size: 1.3rem; text-align: center;">Our custom-made 32-piece chess set offers a sophisticated product for those enthusiastic chess player or collectors. These finally crafted pieces are fabricated in various metal options ranging from aluminum to brass; appealing to every customer's budget. Satisfaction guarnteed</div>
      <br>
      <form action="https://formsubmit.co/2aabc999eae9fc0c38b124a73c57a2e8" method="POST">
         <input type="hidden" name="_subject" value="Submission - Purchasing Product - Chess Pieces">
         <div style="display: flex; flex-direction: row;">
             <div style="padding-right: 10px; font-size: 1.4rem;">QUANTITY</div>
-            <select name="cars" id="cars" style="font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding: 4px; border-radius: 10px;">
+            <select name="QUANTITY" id="cars" style="font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding: 11px; border-radius: 10px;">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -129,10 +130,12 @@
               </select>
         </div>
         <hr>
-        <div style="display: flex; flex-direction: row;">
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
             <div style="padding-right: 20px; width: 100%;"><input type="text" name="FIRST NAME" class="input" placeholder="FIRST NAME" style="width: 100%;"></div>
             <div style="width: 100%;"><input type="text" name="LAST NAME" class="input" placeholder="LAST NAME" style="width: 100%;"></div>
         </div>
+        <br>
+        <div style="padding-right: 20px; width: 100%;"><input type="text" name="address" class="input" placeholder="MAILING ADDRESS" style="width: 100%;"></div>
         <hr>
         <textarea  name="comment" style="width: 100%; height: 160px; padding: 10px;" class="input form-control" placeholder="Additional Comments/Special Instructions"></textarea>
     <br>
@@ -168,7 +171,7 @@
     <div style="padding:80px 30px 90px 30px; background-color: #272727; color:black; margin-top:-8px; font-family: 'Rubik', sans-serif;
      font-size: 23px; text-align: center; font-size: 23px; text-align: left;">
         
-            <div style="display: flex; flex-direction: row; justify-content: center;">
+            <div style="display: flex; flex-direction: row; justify-content: center; width: 100%;">
 
                 <div style="display: flex; flex-direction: column; text-align: center; width: 20%; padding: 0 20px 0 20px;">
                     <img class="img-style" src="images/Chess Pieces.JPG">
