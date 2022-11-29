@@ -16,7 +16,7 @@
     padding: 0;
     display: flex;
     font-family: 'Quicksand', sans-serif;
-    text-shadow: 2px 2px 2px #000;
+    text-shadow: 1px 1px 2px #000;
 }
 
 .navbar-links li {
@@ -33,7 +33,7 @@
 }
 
 .navbar-links li:hover {
-    
+
 }
 
 .toggle-button {
