@@ -66,7 +66,7 @@
             padding-top: 10px; 
             font-size: 1rem;
             padding-bottom: 18px;
-            font-size: .9rem;
+            font-size: 1rem;
         }
 
         .input {
@@ -80,19 +80,42 @@
             border-bottom: 1px solid rgba(0, 0, 0, 0.3);
         }
 
-        #container {
-    width: 100%;
-    height: 100%;
+        #container-chess {
     position: absolute;
     visibility: hidden;
     display: none;
     background-color: rgba(22,22,22,0.4);
 }
 
-#container:target {
+#container-chess:target {
     visibility: visible;
     display: block;
 }
+
+#container-axe {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+    background-color: rgba(22,22,22,0.4);
+}
+
+#container-axe:target {
+    visibility: visible;
+    display: block;
+}
+
+#container-metalSign {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+    background-color: rgba(22,22,22,0.4);
+}
+
+#container-metalSign:target {
+    visibility: visible;
+    display: block;
+}
+
 .reveal-modal {
     background:#FFF; 
     margin: 0 auto;
@@ -100,20 +123,21 @@
     position: relative; 
     z-index:41;
     top: 25%;
-    padding:30px; 
+    padding: 30px; 
     border-radius: 20px;
 }
         </style>
     </head>
     
     <body>
-<! ------------------------------------------- FORM POP-UP ------------------------------------------->
-<div id="container">
-<div id="exampleModal" class="reveal-modal">
+<! ------------------------------------------- FORM POP-UP (CUSTOM CHESS PIECES) ------------------------------------------->
+<div id="container-chess">
+    <div style="padding: 40px 0 40px 0;">
+<div id="chess-reveal" class="reveal-modal">
     <a href="#" style="color: #000; font-size: 2rem;">X</a>
      <div style="text-align: center; font-size: 3rem; font-weight: bold; font-family: 'Rubik', sans-serif; color: #000;"> CUSTOM CHESS PIECES</div>
       <center>
-      <img style="width: 260px; border: 2.5px solid black; border-radius: 30px; border-style: block;" src="images/Chess Pieces.JPG">
+      <img style="width: 260px; border-radius: 30px;" src="images/Chess Pieces.JPG">
       </center>
      <div class="desc" style="color: #000; text-align: center; font-size: 1.3rem; text-align: center;">Our custom-made 32-piece chess set offers a sophisticated product for those enthusiastic chess player or collectors. These finally crafted pieces are fabricated in various metal options ranging from aluminum to brass; appealing to every customer's budget. Satisfaction guarnteed</div>
      <br>
@@ -135,14 +159,99 @@
             <div style="width: 100%;"><input type="text" name="LAST NAME" class="input" placeholder="LAST NAME" style="width: 100%;"></div>
         </div>
         <br>
-        <div style="padding-right: 20px; width: 100%;"><input type="text" name="address" class="input" placeholder="MAILING ADDRESS" style="width: 100%;"></div>
+        <div style="padding-right: 20px; width: 100%;"><input type="text" name="address" class="input" placeholder="EMAIL ADDRESS" style="width: 100%;"></div>
         <hr>
         <textarea  name="comment" style="width: 100%; height: 160px; padding: 10px;" class="input form-control" placeholder="Additional Comments/Special Instructions"></textarea>
     <br>
     <center>
-        <input type="submit" value="PURCHASE" style="border-radius: 15px; padding: 5px 30px 5px 30px; border: 1px solid;">
+        <input type="submit" value="REQUEST" style="border-radius: 15px; padding: 5px 30px 5px 30px; border: 1px solid;">
     </center>
     </form>
+</div>
+</div>
+</div>
+
+<! ------------------------------------------- FORM POP-UP (AXES) ------------------------------------------->
+<div id="container-axe">
+    <div style="padding: 40px 0 40px 0;">
+<div id="reveal-axe" class="reveal-modal">
+    <a href="#" style="color: #000; font-size: 2rem;">X</a>
+     <div style="text-align: center; font-size: 3rem; font-weight: bold; font-family: 'Rubik', sans-serif; color: #000;"> COMPETITION AXES </div>
+      <center>
+      <img style="width: 390px; border-radius: 30px;" src="images/Full Axe.jpg">
+      </center>
+     <div class="desc" style="color: #000; text-align: center; font-size: 1.3rem; text-align: center;">The only premium American-Made competition axe on the market, sold at an affordable price with uncompromising quality and durability. Designed to last and handcrafted in our state-of-the-art facility using only the finest cold-rolled steel and hickory handle. Includes a pinned head to ensure safety and offered in two sizes (Heavy and Light). Balanced for precision throwing to nail the bullseye every time. Reach out to our team to discuss bulk ordering, custom colors, and personalization options</div>
+     <br>
+     <form action="https://formsubmit.co/2aabc999eae9fc0c38b124a73c57a2e8" method="POST">
+        <input type="hidden" name="_subject" value="Submission - Purchasing Product - Chess Pieces">
+        <div style="display: flex; flex-direction: row;">
+            <div style="padding-right: 10px; font-size: 1.4rem;">QUANTITY</div>
+            <select name="QUANTITY" id="cars" style="font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding: 11px; border-radius: 10px;">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+        </div>
+        <hr>
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <div style="padding-right: 20px; width: 100%;"><input type="text" name="FIRST NAME" class="input" placeholder="FIRST NAME" style="width: 100%;"></div>
+            <div style="width: 100%;"><input type="text" name="LAST NAME" class="input" placeholder="LAST NAME" style="width: 100%;"></div>
+        </div>
+        <br>
+        <div style="padding-right: 20px; width: 100%;"><input type="text" name="address" class="input" placeholder="EMAIL ADDRESS" style="width: 100%;"></div>
+        <hr>
+        <textarea  name="comment" style="width: 100%; height: 160px; padding: 10px;" class="input form-control" placeholder="Additional Comments/Special Instructions"></textarea>
+    <br>
+    <center>
+        <input type="submit" value="REQUEST" style="border-radius: 15px; padding: 5px 30px 5px 30px; border: 1px solid;">
+    </center>
+    </form>
+</div>
+</div>
+</div>
+
+<! ------------------------------------------- FORM POP-UP (METAL SIGNS) ------------------------------------------->
+<div id="container-metalSign">
+    <div style="padding: 40px 0 40px 0;">
+<div id="reveal-metalSigns" class="reveal-modal">
+    <a href="#" style="color: #000; font-size: 2rem;">X</a>
+     <div style="text-align: center; font-size: 3rem; font-weight: bold; font-family: 'Rubik', sans-serif; color: #000;"> CUSTOM METAL SIGNS  </div>
+      <center>
+      <img style="width: 390px; border-radius: 30px;" src="images/Gallery Metal Sign.JPG">
+      </center>
+     <div class="desc" style="color: #000; text-align: center; font-size: 1.3rem; text-align: center;">Turn your ideas into a forged treasure. With our custom-made metal signs we have the ability to create a proudct that will reflect your personality.
+                                 Our liminous powder coated finish gaurantees any design will be perfect for the space you are creating. 
+                                 From sports themes to unique family crests, the possibilties with our design team are endless! Add LEDs for a unique modern flair</div>
+     <br>
+     <form action="https://formsubmit.co/2aabc999eae9fc0c38b124a73c57a2e8" method="POST">
+        <input type="hidden" name="_subject" value="Submission - Purchasing Product - Chess Pieces">
+        <div style="display: flex; flex-direction: row;">
+            <div style="padding-right: 10px; font-size: 1.4rem;">QUANTITY</div>
+            <select name="QUANTITY" id="cars" style="font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding: 11px; border-radius: 10px;">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+        </div>
+        <hr>
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <div style="padding-right: 20px; width: 100%;"><input type="text" name="FIRST NAME" class="input" placeholder="FIRST NAME" style="width: 100%;"></div>
+            <div style="width: 100%;"><input type="text" name="LAST NAME" class="input" placeholder="LAST NAME" style="width: 100%;"></div>
+        </div>
+        <br>
+        <div style="padding-right: 20px; width: 100%;"><input type="text" name="address" class="input" placeholder="EMAIL ADDRESS" style="width: 100%;"></div>
+        <hr>
+        <textarea  name="comment" style="width: 100%; height: 160px; padding: 10px;" class="input form-control" placeholder="Additional Comments/Special Instructions"></textarea>
+    <br>
+    <center>
+        <input type="submit" value="REQUEST" style="border-radius: 15px; padding: 5px 30px 5px 30px; border: 1px solid;">
+    </center>
+    </form>
+</div>
 </div>
 </div>
         <!---------------------------------------- NAVIGATION ---------------------------------------->
@@ -173,7 +282,7 @@
         
             <div style="display: flex; flex-direction: row; justify-content: center; width: 100%;">
 
-                <div style="display: flex; flex-direction: column; text-align: center; width: 20%; padding: 0 20px 0 20px;">
+                <div style="display: flex; flex-direction: column; text-align: center; width: 25%; padding: 0 20px 0 20px;">
                     <img class="img-style" src="images/Chess Pieces.JPG">
                         <div class="title"> <i> CUSTOM CHESS PIECES </i></div>
                             <div class="desc">
@@ -181,14 +290,13 @@
                                 These finally crafted pieces are fabricated in various metal options ranging from aluminum to brass; appealing to every customer's budget. 
                                 Satisfaction guarnteed
                             </div>
-                        <button style="width: 70%; margin-left: auto; margin-right: auto;" class="button"> 
-                            <a href="#container" data-reveal-id="exampleModal" style="color: #FFF;">
-                                PURCHASE
-                            </a>
-                        </button>
+                        <a href="#container-chess" data-reveal-id="chess-reveal" style="color: #FFF;">
+                            <button style="width: 70%; margin-left: auto; margin-right: auto;" class="button"> 
+                                 PURCHASE
+                            </button>
+                        </a>
                 </div>
-                
-                <div style="display: flex; flex-direction: column; text-align: center; width: 20%; padding: 0 20px 0 20px;">
+                <div style="display: flex; flex-direction: column; text-align: center; width: 25%; padding: 0 20px 0 20px;">
                     <img class="img-style" src="images\axeTest.png">
                         <div class="title"> <i>COMPETITION AXES</i> </div>
                             <div class="desc">
@@ -198,10 +306,14 @@
                                  Balanced for precision throwing to nail the bullseye every time. 
                                  Reach out to our team to discuss bulk ordering, custom colors, and personalization options
                             </div>
-                        <button style="width: 70%; margin-left: auto; margin-right: auto;" class="button">PURCHASE</button>
+                        <a href="#container-axe" data-reveal-id="reveal-axe" style="color: #FFF;">
+                            <button style="width: 70%; margin-left: auto; margin-right: auto;" class="button"> 
+                                 PURCHASE
+                            </button>
+                        </a>
                 </div>
 
-                <div style="display: flex; flex-direction: column; text-align: center; width: 20%; padding: 0 20px 0 20px;">
+                <div style="display: flex; flex-direction: column; text-align: center; width: 25%; padding: 0 20px 0 20px;">
                     <img class="img-style" src="images\signTest.png">
                         <div class="title"> <i> CUSOTM METAL SIGNS </i> </div>
                             <div class="desc">
@@ -209,7 +321,11 @@
                                  Our liminous powder coated finish gaurantees any design will be perfect for the space you are creating. 
                                  From sports themes to unique family crests, the possibilties with our design team are endless! Add LEDs for a unique modern flair
                             </div>
-                        <button style="width: 70%; margin-left: auto; margin-right: auto;" class="button">PURCHASE</button>
+                        <a href="#container-metalSign" data-reveal-id="reveal-metalSign" style="color: #FFF;">
+                            <button style="width: 70%; margin-left: auto; margin-right: auto;" class="button"> 
+                                 PURCHASE
+                            </button>
+                        </a>
                 </div>
             </div>  
          
