@@ -16,59 +16,40 @@
 
     <style>
         .section {
-            padding: 10px 30px 60px 30px; 
-            background-color: #2F2F2F;
+            padding:90px 30px 60px 30px; 
+            background-color: #4e4e4e;
         }
 
         .title1 {
             padding-bottom: 20px;
             padding-top: 40px; 
-            font-size: 4.3rem;
+            font-size: 3.5rem;
             font-weight: bold;
-            font-family: 'Rubik', sans-serif;
-            font-weight: 600;
-            text-shadow: 2.5px 2.5px 0 black;
-            text-align: center; 
-            color: #FFF; 
+            text-shadow: 4px 4px 0px black;
         }
-        
-        .title2 {
-            text-align: center; 
-            color: white; 
-            font-family: 'Rubik', sans-serif;
-            font-size: 1.7rem; 
-            font-weight: normal; 
-            display: block;
-            padding: 0 4rem 2rem 4rem; 
-            text-shadow: 2px 2px 0 #000;
-        }
+
         .desc1 {
-            padding: 0 20px 0 20px; 
-            line-height: 3.2rem; 
+            padding: 0 150px 0 150px; 
+            line-height: 3rem; 
             text-align: center; 
             font-family: 'Quicksand', sans-serif; 
-            color: white; 
-            font-size: 1.9rem;
-            font-weight: 200;
+            color: #white; 
+            font-size: 1.8rem;
+            font-weight: normal;
             display: block;
         }
 
         .button-seeAll {
             font-size: 1.5rem; 
             border: 1px solid white;
-            background: none; 
+            background: #4e4e4e; 
             border-radius: 5px; 
             color: white; 
             padding: 2px 50px 2px 50px;
-            transition: color .2s;
         }
 
-        .button-seeAll:hover {
-            color: #f0a500;
-            cursor: pointer;
-        }
         .button-seeProducts {
-            border-radius: 3px;
+            border-radius: 5px;
             color: white;
             font-size: 2rem;
             font-size: 1.5rem; 
@@ -77,44 +58,9 @@
             border-radius: 3em; 
             color: white; 
             padding: 12px 75px;
-            border: 3px solid rgba(255, 255, 255);
+            border: 2px solid rgba(255, 255, 255);
             cursor: pointer;
-            transition: color .3s, border-color .3s;
-            font-family: 'Rubik', sans-serif;
         }
-
-        .link-hover:hover {
-            color: #ECBE58;
-            border-color: #ECBE58;
-        }
-        
-        .flex-row {
-            display: flex; 
-            flex-wrap: wrap;
-            padding: 0 80px 0 80px;
-            
-        }
-        
-        @media (max-width: 800px) {
-          .flex-row {
-        flex-direction: column;
-        padding: 0;
-      }
-}
-        .flex-col {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 1rem 1rem;
-        }
-        
-         @media (max-width: 800px) {
-             .flex-img {
-                 width: 500px;
-             }
-         }
-}
     </style>
     </head>
     
@@ -141,13 +87,7 @@
         </nav>
         <script type="text/javascript" src="javascript.js"></script>
         
-        <!------------------------------------- SECTION #1 (HEADER)  ------------------------------------->  
-        <div style="background: url(images/testBackground5.png); 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;">
-
+        <!------------------------------------- SECTION #1 (HEADER)  ------------------------------------->
             <!--
             <img src="images\testBackground2.png" style="width: 100%;">
             <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 4rem;"> 
@@ -159,59 +99,63 @@
             </div>
             -->
             
-
-            <div style="padding:80px 30px 100px 30px;">
-                <div style="text-align: center; font-size: 4rem; font-weight: bold; color: white; line-height: 1rem;">
-                    <img class="flex-img" src="images\Main Logo(4).png" width="650"> 
-                    <br>
-                    <span style="font-size: 1.5rem; font-family: 'Quicksand', sans-serif; text-shadow: 2px 2px 0 #000; color: #FFF;"> The first and only sutdent-led small production 
-                    in the United States that features advanced manufacturing</span>
-                    <a href="products3.html"> <div style="padding-top: 1.5rem;"> <button class="button-seeProducts link-hover"> SEE PRODUCTS </button> </div> </a>
-                    
+            <div style="padding: 100px 100px 100px 100px; background-color: #1c1c1c;">
+                <div style="display: flex; flex-direction: row; justify-content: space-evenly; width: 100%;">
+                    <div style="display: flex; flex-direction: column; justify-content: space-evenly;">
+                        <img src="images\Main Logo(4).png" width="600">
+                     <div style="font-family: 'Quicksand', sans-serif; font-size: 1.5rem; color: white; padding-left: 0;"> The first and only sutdent-led small production 
+                    in the United States that features advanced manufacturing </div>
+                    </div>
+                     <img src="images/gears.png" width="500">
                 </div>
+               
             </div>
             
-        </div>
-        
+            
+
     
     <!---------------------------------------- SECTION #2 ---------------------------------------->
-    <div class="section" style="background-image: url('images/tools pattern.png');">
+    <div class="section">
+        <div style="text-align: center; color: #FFF; font-family: 'Quicksand', sans-serif;"> 
+        <i> <span class="title1">OUR MISSION</span></i> 
         
-    <div class="title1"> <i>OUR MISSION</i></div> 
-    <div class="title2">
+    <span style="font-size: 1.7rem; font-weight: normal; display: block; padding: 0 12rem 4rem 12rem; text-shadow: 2px 2px 0 #000;">
         <i> Is to become the premier high school, student operated, metal fabrication business in the United States.</i>
-    </div>
-
-        <div class="flex-row">
-            <img src="images/Welding of Axe Head.jpg" style="align-self: center; max-width: 400px; flex: 50%; margin-left: auto; margin-right: auto; padding-left: 0px;"> 
-            <div class="desc1" style="padding-top: 20px; flex: 50%;">
-                Turn your ideas into a forged treasure. With our custom-made metal signs we have the ability to create a product that will
-                reflect your personality. our luminous powder coated finish gaurantees any design will be perfect for the space you are
-                creating. From sports themes to unique family crests, the posibilities with our design team are endless! Add LEDs for a unique modern flair.
-                <br>
-                <br>
-                <a href="products3.html"><button class="button-seeAll"> SEE ALL  ➜</button></a>
+    </span>
+        <br>
+        <div style="display: flex; flex-direction: row;">
+            <span style="padding-left: 10px;"> <img src="images/Welding of Axe Head.jpg" width="400" align="left"> </span>
+    <span class="desc1">
+        Turn your ideas into a forged treasure. With our custom-made metal signs we have the ability to createa  product that will
+        reflect your personality. our luminous powder coated finish gaurantees any design will be perfect for the space you are
+        creating. From sports themes to unique family crests, the posibilities with our design team are endless! Add LEDs for a unique modern flair.
+        <br>
+        <br>
+        <a href="products3.html"><button class="bright button-seeAll"> SEE ALL  ➜</button></a>
+            </span>
             </div>
         </div>
     </div>
     <!---------------------------------------- SECTION #3 ---------------------------------------->
-    <div style="padding:90px 30px 60px 30px; background-color: #1F1F1F; background-image: url('images/welding pattern.png');">
+    <div style="padding:90px 30px 60px 30px; background-color: #1F1F1F;">
         <div style="text-align: center; font-size: 3rem; font-weight: bold; color: #FFF; font-family: 'Quicksand', sans-serif; padding-bottom: 20px; padding-top: 40px;"> 
-            <i> <span class="title1">OUR VISION</span></i> 
+            <i> <span style="text-shadow: 4px 4px 0px black;">OUR VISION</span></i> 
                 <br>
-            <span style="font-family: 'Rubik', sans-serif; font-size: 1.7rem; font-weight: normal; display: block; padding: 0 12rem 4rem 12rem; text-shadow: 2px 2px 0 #000;">
+            <span style="font-family: 'Quicksand', sans-serif; color: white; font-size: 24px; font-weight: normal; display: block; padding: 0 12rem 0 12rem;">
                 To supply end users, custom metal fabrication products, ranging from competition level axes to powder coated metal signs.
             </span>
             <br>
-            <div class="flex-row">
-                
-        <div class="desc1" style="padding: 0 30px 0 150px;">
+            <div style="display: flex; flex-direction: row;">
+                <span style="padding-left: 50px;"> <img src="images/Welding 2.jpg" width="390" align="left"> </span>
+        <span style="padding: 0 150px 0 150px; line-height: 40px; text-align: left; font-family: 'Quicksand', sans-serif; color: #white; font-size: 22px; font-weight: normal; display: block;">
             Cut through the competiton. The only premium American-Made competition axe on the market, sold at an affordable price with uncompromising quality and durability. 
             Designed to last and handcrafted in our state-of-the-art facility using only the finest cold-rolled steel and hickory handle.
             Includes a pinned head to ensure safety and offered in two sizes (Heavy and Light). Balanced for precision throwing to nail the bullseye every time.
             Reach out to our team to discuss bulk ordering, custom colors, and personalization options.
-                </div>
-                <div style="padding-right: 200px;"> <img src="images/Welding 2.jpg" width="390"> </div>
+            <br>
+            <br>
+            <button style="border: 1px solid white; background: #1F1F1F; border-radius: 5px; color: white; padding: 2px 20px 2px 20px;">SEE ALL  ➜</button>
+                </span>
                 </div>
         </div>
     </div>
