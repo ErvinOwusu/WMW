@@ -6,13 +6,22 @@ secondary color: #F0A500
 tertiary color: #CF7500
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-/* font-family: 'Rubik', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
-/* font-family: 'Bad Script', cursive; */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-/* font-family: 'Quicksand', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Rubik:wght@300;400;600&display=swap');
+/*
+'Rubik', sans-serif;
+font-weight: 200;
+font-weight: 400;
+font-weight: 600;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Rubik:wght@300;400;600&display=swap');
+/*
+'Quicksand', sans-serif;
+font-weight: 300;
+font-weight: 500;
+font-weight: 700;
+*/
+
 
 html {
     box-sizing: border-box;
@@ -89,8 +98,10 @@ a:hover {
 }
 
 .dim:hover {
-    filter: brightness(0%);
+    filter: brightness(70%);
 }
 .dim {
-    transition: filter .5s;
+    transition: filter .3s;
 }
+
+
