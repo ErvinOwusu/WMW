@@ -16,7 +16,7 @@
     padding: 0;
     display: flex;
     font-family: 'Quicksand', sans-serif;
-    text-shadow: 1px 1px 2px #000;
+    font-weight: bold;
 }
 
 .navbar-links li {
@@ -30,10 +30,11 @@
     color: #FFF;
     padding: 0.5rem 2rem;
     display: block;
+    transition: filter .3s, transform .3s;
 }
 
-.navbar-links li:hover {
-
+.navbar-links li a:hover {
+    transform: scale(1.09);
 }
 
 .toggle-button {
