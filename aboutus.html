@@ -34,6 +34,22 @@
             padding: 10px;
             border-radius: 10px;
         }
+
+        .flex-row {
+            display: flex; flex-direction: row
+        }
+
+        .title {
+            font-size: 2rem; font-family: 'Rubik', sans-serif; font-weight: 400;
+        }
+
+        @media (max-width: 1160px) {
+            .flex-row {
+                display: flex; 
+                flex-direction: column; 
+            }
+
+        }
     </style>
     <body>
 
@@ -59,15 +75,15 @@
     </nav>
     <script type="text/javascript" src="javascript.js"></script>
     
-    <div style="padding:80px 30px 90px 30px; background :#1F1F1F; margin-top:-8px; font-family: 'Rubik', sans-serif;
+    <div style="padding:80px 30px 90px 30px; background :#1F1F1F; margin-top:-8px; font-family: &#39;Rubik&#39;, sans-serif;
          font-size: 23px; text-align: center; font-size: 23px; text-align: left;">
-            <div style="text-shadow: 5px 5px 0 #000; font-size: 4rem; font-weight: bold; line-height: 50px; color: #FFF; font-family: 'Quicksand', sans-serif; padding-bottom: 20px; text-align: center;"> 
+            <div style="text-shadow: 5px 5px 0 #000; font-size: 4rem; font-weight: bold; line-height: 50px; color: #FFF; font-family: &#39;Quicksand&#39;, sans-serif; padding-bottom: 20px; text-align: center;"> 
                 ABOUT US 
             </div>
             <br>
-           <img src="images/about us.png" width="700" class="center"> 
+           <img src="images/about us.png" width="900" class="center"> 
            <br>
-           <div style="font-family: 'Quicksand', sans-serif; text-align: center; color: #FFF;"><i>Meet the team behind Woodland Metal Works, a small production team consisting of marketing, operations, and manufacturing </i> </div>
+           <div style="font-family: &#39;Quicksand&#39;, sans-serif; text-align: center; color: #FFF;"><i>Meet the team behind Woodland Metal Works, a small production team consisting of high school students and teachers </i> </div>
             <!--
             <div style="padding: 0 5rem 0 5rem">
                 <table>
@@ -93,197 +109,98 @@
         </div>
     
     <!---------------------------------------- Marketing/Operations Department ---------------------------------------->
-    <div style="padding:100px 30px 100px 30px; background-color: #2C2C2C;">
+    <div style="padding:90px 30px 60px 30px; background-color: #373737;">
         
-        <div style="font-family: 'Rubik', sans-serif; color: white; font-size: 2.5rem; font-weight: bold; padding: 0 100px 8px 100px;"> 
-            
-            <i>Marketing & Opeartions Department</i>
-        </div>
-        <div style="font-family: 'Quicksand', sans-serif; color: white; font-size: 1.3rem; width: 60%; font-weight: lighter; padding-bottom: 55px; padding: 0 100px 50px 100px;">
-            Our Marketing/Operations Department is made up of Sales/Marketing/Customer Service, Accounting/Finance, Shipping/Receiving, Production/Scheduling/Quality Control, and Human Resources.
-        </div>
-        <div style="display: flex; flex-direction: row; justify-content: center; padding: 0 100px 0 100px;">
-            <div style="display: flex; flex-direction: column; width: 20%; font-family: 'Poppins', sans-serif;">
-                <div style="font-size: 1.7rem; color: #FFF; font-weight: bold; font-size: 22px; font-weight: 500;"> <img class="icon" src="images/icon-marketing.png" width="50"> <br> Sales/Marketing & <br> Consumer Service</div>
-                <div style="color: white; font-size: 18px; font-weight: lighter; font-family: 'Quicksand', sans-serif;"> Isabella Markeveys </div>
-                <div style="color: white; font-size: 18px; font-weight: lighter; font-family: 'Quicksand', sans-serif;"> Kalle Legassey </div>
-                <div style="color: white; font-size: 18px; font-weight: lighter; font-family: 'Quicksand', sans-serif;"> Katelynn Yoxall </div>
-                <div style="color: white; font-size: 18px; font-weight: lighter; font-family: 'Quicksand', sans-serif;"> Siana Ajro </div>
-                <div style="color: white; font-size: 18px; font-weight: lighter; font-family: 'Quicksand', sans-serif;"> Aidan Wolfanger </div>
-            </div>
-        
-            <div style="display: flex; flex-direction: column; width: 20%;">
-                <div style="font-size: 1.7rem; color: #FFF; font-weight: bold; font-size: 22px;"> <img class="icon" src="images/icon-finance.png" width="50"> <br> Accounting/Finance</div>
-                <div style="color: white; font-size: 18px; font-weight: lighter;"> Ryan O’Donnell </div>
-                <div style="color: white; font-size: 18px; font-weight: lighter;"> Bryan Kieffer </div>
-                <div style="color: white; font-size: 18px; font-weight: lighter;"> Branden Burns </div>
-                <div style="color: white; font-size: 18px; font-weight: lighter;"> Gary Gelinas </div>
-            </div>
-
-            <div style="display: flex; flex-direction: column; width: 20%;">
-                <div style="font-size: 1.7rem; color: #FFF; font-weight: bold; font-size: 22px;"> <img class="icon" style="width: 4.5rem; height: 3.7rem;" src="images/icon-shipping.png" width="60"> <br> Shipping & Receiving</div>
-                <div style="color: white; font-size: 18px; font-weight: lighter;"> O’Bed Peppers </div>
-                <div style="color: white; font-size: 18px; font-weight: lighter;"> DeAndre Allen </div>
-                <div style="color: white; font-size: 18px; font-weight: lighter;"> Ethan Clarck </div>
-            </div>
-
-            <div style="display: flex; flex-direction: column; width: 20%;">
-                <div style="font-size: 1.7rem; color: #FFF; font-weight: bold; font-size: 22px;"> <img class="icon" src="images/icon-schedule.png" width="50"> <br> Production/Scheduling & <br>Quality Control</div>
-                <div style="color: white; font-size: 18px; font-weight: lighter;"> Anthony Butkevicius </div>
-                <div style="color: white; font-size: 18px; font-weight: lighter;"> Aidan Messore </div>
-                <div style="color: white; font-size: 18px; font-weight: lighter;"> Landon Barrows </div>
-            </div>
-
-            <div style="display: flex; flex-direction: column; width: 20%;">
-                <div style="font-size: 1.7rem; color: #FFF; font-weight: bold; font-size: 22px;"> <img class="icon" src="images/human-icon.png" width="50"> <br> Human Resources</div>
-                <div style="color: white; font-size: 18px; font-weight: lighter;"> Aden Ianniruberto </div>
-            </div>
-        </div>
-
-        <!--
-        
-        <div style="text-align: center; font-size: 3.4rem; font-weight: bold; color: #FFF; font-family: 'Quicksand', sans-serif; padding-bottom: 40px; padding-top: 40px;"> 
+        <div style="text-align: center; font-size: 3.4rem; font-weight: bold; color: #FFF; font-family: &#39;Quicksand&#39;, sans-serif; padding-bottom: 40px; padding-top: 40px;"> 
         <i> <span style="text-shadow: 4px 4px 0px black;">Marketing/Operations Department</span></i> 
         <br>
-    <div style="font-family: 'Quicksand', sans-serif; color: white; font-size: 24px; font-weight: normal; display: block; padding: 2rem 12rem 0 12rem;">
+    <div style="font-family: &#39;Quicksand&#39;, sans-serif; color: white; font-size: 24px; font-weight: normal; display: block; padding: 2rem 12rem 0 12rem;">
         Our Marketing/Operations Department is made up of Sales/Marketing/Customer Service, Accounting/Finance, Shipping/Receiving, Production/Scheduling/Quality Control, and Human Resources.
     </div>
-        <br>
-        <div style="display: flex; flex-direction: row;">
-            <span style="padding-left: 50px;"> <img src="images/Completed Axe Head.jpg" width="390" align="left"> </span>
-    <span style="padding: 0 150px 0 150px; line-height: 40px; text-align: left; font-family: 'Quicksand', sans-serif; color: #white; font-size: 22px; font-weight: normal; display: block;">
-        <div class= marketing;>
-        <h3>Sales/Marketing/Customer Service:<br></h3>
-        <h5>Isabella Markeveys (TL),
-        Kalle Legassey,
-        Katelynn Yoxall,
-        Siana Ajro, and 
-        Aidan Wolfanger <br></h5>
-        
-        <br>
-        <h3>Accounting/Finance:<br></h3>
-        <h5>Ryan O’Donnell (TL),
-        Bryan Kieffer,
-        Branden Burns, and <br>
-        Gary Gelinas <br></h5>
-        
-        <br>
-        <h3>Shipping/Receiving:<br></h3>
-        <h5>O’Bed Peppers (TL),
-        DeAndre Allen, and 
-        Ethan Clark <br></h5>
-        
-        <br>
-        <h3>Production/Scheduling/Quality Control:<br></h3>
-        <h5>Anthony Butkevicius (TL), 
-        Aidan Messore, and <br>
-        Landon Barrows <br></h5>
-        
-        <br>
-        <h3>Human Resources:<br></h3>
-        <h5>Aden Ianniruberto (TL) <h5>
-        <br>
-        <button style="border: 1px solid white; background: #4e4e4e; border-radius: 5px; color: white; padding: 10px 20px 10px 20px;">SEE MORE  ➜</button>
-    </span>
+    <br>
+    <div style="display: flex; flex-direction: row;">
+    <div style="padding: 0 150px 0 150px; line-height: 40px; text-align: left; font-family: &#39;Quicksand&#39;, sans-serif; color: #white; font-size: 22px; font-weight: normal; display: block;">
+            <div class="title">Sales/Marketing/Customer Service:</div>
+            Isabella Markeveys (TL),
+            Kalle Legassey,
+            Katelynn Yoxall,
+            Siana Ajro, and
+            Aidan Wolfanger
+            <br>
+            
+            <br>
+            <div class="title">Accounting/Finance:<br></div>
+            Ryan O’Donnell (TL),
+            Bryan Kieffer,
+            Branden Burns, and <br>
+            Gary Gelinas <br>
+            
+            <br>
+             <div class="title">Shipping/Receiving:<br></div>
+            O’Bed Peppers (TL),
+            DeAndre Allen, and
+            Ethan Clark <br>
+            
+            <br>
+             <div class="title">Production/Scheduling/Quality Control:<br></div>
+            Anthony Butkevicius (TL),
+            Aidan Messore, and <br>
+            Landon Barrows <br>
+            
+            <br>
+             <div class="title">Human Resources:<br></div>
+            Aden Ianniruberto (TL)
+            
         </div>
-        </div>
-        </div>
-        -->
+    </div>
+</div>
     </div>
 
     <!---------------------------------------- Manufacturing Department ---------------------------------------->
-    <div style="padding:90px 30px 60px 30px; background-color: #1F1F1F;">
-        
-        <div style="text-align: right; font-family: 'Rubik', sans-serif; color: white; font-size: 2.5rem; font-weight: bold; padding: 0 100px 8px 100px;"> 
-            <i>Manufacturing Department</i>
-        </div>
-        <div style="text-align: right; font-family: 'Quicksand', sans-serif; color: white; font-size: 1.3rem; width: 100%; font-weight: lighter; padding: 0 100px 50px 100px;">
-            Our Manufacturing Department is made up of CNC - Computer Aided Design, CNC - Lathe, CNC - Milling, Plasma Cutter, and Welding.
-        </div>
-        <div style="display: flex; flex-direction: row; justify-content: center; padding: 0 100px 0 300px;">
-            <div style="display: flex; flex-direction: column; width: 20%; font-family: 'Poppins', sans-serif;">
-                <div style="font-size: 1.7rem; color: #FFF; font-weight: bold; font-size: 22px; font-weight: 500;"> <img class="icon" src="images/icon-computer.png" width="50"> <br> CNC - Computer Aided Design:</div>
-                <div style="color: white; font-size: 18px; font-weight: lighter; font-family: 'Quicksand', sans-serif;"> Cody Christiano (TL) </div>
-                <div style="color: white; font-size: 18px; font-weight: lighter; font-family: 'Quicksand', sans-serif;"> Vincent Sasso </div>
-                <div style="color: white; font-size: 18px; font-weight: lighter; font-family: 'Quicksand', sans-serif;"> Michael Varesio </div>
-            </div>
-        
-            <div style="display: flex; flex-direction: column; width: 20%;">
-                <div style="font-size: 1.7rem; color: #FFF; font-weight: bold; font-size: 22px;"> <img class="icon" src="images/icon-machine.png" width="50"> <br> CNC - Lathe:</div>
-                <div style="color: white; font-size: 18px; font-weight: lighter;"> Bianca Sturges (TL) </div>
-                <div style="color: white; font-size: 18px; font-weight: lighter;"> Laura Whiskeyman </div>
-            </div>
-
-            <div style="display: flex; flex-direction: column; width: 20%;">
-                <div style="font-size: 1.7rem; color: #FFF; font-weight: bold; font-size: 22px;"> <img class="icon" style="width: 4.5rem; height: 3.7rem;" src="images/icon-miling.png" width="60"> <br> CNC - Milling: </div>
-                <div style="color: white; font-size: 18px; font-weight: lighter;"> Vanessa Krasnicki (TL) </div>
-                <div style="color: white; font-size: 18px; font-weight: lighter;"> Edward Acevedo </div>
-            </div>
-
-            <div style="display: flex; flex-direction: column; width: 20%;">
-                <div style="font-size: 1.7rem; color: #FFF; font-weight: bold; font-size: 22px;"> <img class="icon" src="images/icon-cutter.png" width="50"> <br> Plasma Cutter:</div>
-                <div style="color: white; font-size: 18px; font-weight: lighter;"> Peter Dupre (TL) </div>
-                <div style="color: white; font-size: 18px; font-weight: lighter;"> Nathan Bouffard </div>
-                <div style="color: white; font-size: 18px; font-weight: lighter;"> Zachary Simpson </div>
-                <div style="color: white; font-size: 18px; font-weight: lighter;"> Nicholas Hummel </div>
-            </div>
-
-            <div style="display: flex; flex-direction: column; width: 20%;">
-                <div style="font-size: 1.7rem; color: #FFF; font-weight: bold; font-size: 22px;"> <img class="icon" src="images/icon-welding.png" width="50"> <br> Welding</div>
-                <div style="color: white; font-size: 18px; font-weight: lighter;"> Edgar Jorge (TL) </div>
-                <div style="color: white; font-size: 18px; font-weight: lighter;"> Alexander Luddy </div>
-                <div style="color: white; font-size: 18px; font-weight: lighter;"> Nicholas Sciarretto </div>
-
-
-            </div>
-        </div>
-
-        <!--
-        <div style="text-align: center; font-size: 3.4rem; font-weight: bold; color: #FFF; font-family: 'Quicksand', sans-serif; padding-bottom: 40px; padding-top: 40px;"> 
+    <div style="padding:90px 30px 60px 30px; background-color: #1F1F1F">
+        <div style="text-align: center; font-size: 3.4rem; font-weight: bold; color: #FFF; font-family: &#39;Quicksand&#39;, sans-serif; padding-bottom: 40px; padding-top: 40px;"> 
         <i> <span style="text-shadow: 4px 4px 0px black;">Manufacturing Department</span></i> 
         <br>
-    <span style="font-family: 'Quicksand', sans-serif; color: white; font-size: 24px; font-weight: normal; display: block; padding: 2rem 12rem 0 12rem;">
+    <span style="font-family: &#39;Quicksand&#39;, sans-serif; color: white; font-size: 24px; font-weight: normal; display: block; padding: 2rem 12rem 0 12rem;">
         Our Manufacturing Department is made up of CNC - Computer Aided Design, <br>CNC - Lathe, CNC - Milling, Plasma Cutter, and Welding.
 
 
     </span>
         <br>
-        <div style="display: flex; flex-direction: row;">
-            <span style="padding-left: 50px;"> <img src="images/Completed Axe Head.jpg" width="390" align="left"> </span>
-    <span style="padding: 0 150px 0 150px; line-height: 40px; text-align: left; font-family: 'Quicksand', sans-serif; color: #white; font-size: 22px; font-weight: normal; display: block;">
-        <div class= marketing;>
-        <h3>CNC - Computer Aided Design:<br></h3>
-        <h5>Cody Christiano (TL),
+        <div class="flex-row">
+            <div style="padding-left: 50px;"> 
+                <img src="images/Completed Axe Head.jpg" width="390" align="left"> 
+            </div>
+    <div style="padding: 0 150px 0 150px; line-height: 40px; text-align: left; font-family: &#39;Quicksand&#39;, sans-serif; color: #white; font-size: 22px; font-weight: normal; display: block;">
+        
+         <div class="title">CNC - Computer Aided Design:<br></div>
+        Cody Christiano (TL),
         Vincent Sasso, and 
-        Michael Varesio <br></h5>
+        Michael Varesio <br>
         
         <br>
-        <h3>CNC - Lathe:<br></h3>
-        <h5>Bianca Sturges (TL) and Laura Whiskeyman <br></h5>
+         <div class="title">CNC - Lathe:<br></div>
+        Bianca Sturges (TL) and Laura Whiskeyman <br>
         
         <br>
-        <h3>CNC - Milling:<br></h3>
-        <h5>Vanessa Krasnicki (TL) and Edward Acevedo <br></h5>
+         <div class="title">CNC - Milling:<br></div>
+        Vanessa Krasnicki (TL) and Edward Acevedo <br>
         
         <br>
-        <h3>Plasma Cutter:<br></h3>
-        <h5>Peter Dupre (TL),
+         <div class="title">Plasma Cutter:<br></div>
+        Peter Dupre (TL),
         Nathan Bouffard,
         Zachary Simpson, and 
-        Nicholas Hummel<br></h5>
+        Nicholas Hummel<br>
         
         <br>
-        <h3>Welding:<br></h3>
-        <h5>Edgar Jorge (TL), 
+         <div class="title">Welding:<br></div>
+        Edgar Jorge (TL), 
         Alexander Luddy, and 
-        Nicholas Sciarretto<h5>
-        <br>
-        <button style="border: 1px solid white; background: #1F1F1F; border-radius: 5px; color: white; padding: 10px 20px 10px 20px;">SEE MORE  ➜</button>
-    </span>
+        Nicholas Sciarretto    
         </div>
+        </div></div>
         </div>
-        </div>
-        -->
     </div>
 
     </body>
