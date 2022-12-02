@@ -17,6 +17,14 @@
     
     <style>
 
+
+
+        .section {
+            display: flex; 
+            flex-direction: row; 
+            justify-content: center; 
+        }
+
         body {
             background-color: #272727;
         }
@@ -130,11 +138,50 @@
     padding: 30px; 
     border-radius: 20px;
 }
+
+.section2 {
+    text-align: center;
+     width: 20%; padding: 0 20px 0 20px;
+}
+
+@media (max-width: 800px) {
+            .section {
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center;
+        }
+
+        .img-style {
+            width: 250px;
+            align-self: center;
+            border: 1.6px solid #FFF;
+            box-shadow: 5px 5px 50px #000;
+        }
+
+        .title {
+            font-family: 'Quicksand', sans-serif; 
+            color: #FFF; 
+            padding-top: 20px;
+            font-size: 1.7rem;
+            font-weight: bold;
+        }
+
+                .section2 {
+            text-align: center; width: 100%; padding: 0 20px 0 20px;
+        }
+}
+
+@media (max-width: 1405px)
+{
+    .section2 {
+            text-align: center; width: 100%; padding: 0 20px 0 20px;
+        }
+}
         </style>
     </head>
     
     <body>
-<! ------------------------------------------- FORM POP-UP (CUSTOM CHESS PIECES) ------------------------------------------->
+<!------------------------------------------- FORM POP-UP (CUSTOM CHESS PIECES) ------------------------------------------->
 <div id="container-chess">
     <div style="padding: 40px 0 40px 0;">
 <div id="chess-reveal" class="reveal-modal">
@@ -284,13 +331,11 @@
         </nav>
         <script type="text/javascript" src="javascript.js"></script>
     
-    <!------------------------------------- Product #1 ------------------------------------->
-    <div style="padding:80px 30px 90px 30px; background-color: #272727; color:black; margin-top:-8px; font-family: 'Rubik', sans-serif;
-     font-size: 23px; text-align: center; font-size: 23px; text-align: left;">
+    <div style="padding:80px 30px 90px 30px; background-color: #272727;">
         
-            <div style="display: flex; flex-direction: row; justify-content: center; width: 100%;">
+            <div class="section">
 
-                <div style="display: flex; flex-direction: column; text-align: center; width: 20%; padding: 0 20px 0 20px;">
+                <div class="section2">
                     <img class="img-style" src="images/Chess Pieces.JPG">
                         <div class="title"> <i> CUSTOM CHESS PIECES </i></div>
                             <div class="desc">
@@ -299,12 +344,15 @@
                                 Satisfaction guarnteed
                             </div>
                         <a href="#container-chess" data-reveal-id="chess-reveal" style="color: #FFF;">
-                            <button style="width: 70%; margin-left: auto; margin-right: auto;" class="button"> 
-                                 PURCHASE
-                            </button>
+                            <div style="padding-bottom: 30px;">
+                                <button style="width: 70%; margin-left: auto; margin-right: auto;" class="button">
+                                     PURCHASE
+                                </button>
+                            </div>
                         </a>
                 </div>
-                <div style="display: flex; flex-direction: column; text-align: center; width: 20%; padding: 0 20px 0 20px;">
+                
+                <div class="section2">
                     <img class="img-style" src="images\axeTest.png">
                         <div class="title"> <i>COMPETITION AXES</i> </div>
                             <div class="desc">
@@ -315,13 +363,15 @@
                                  Reach out to our team to discuss bulk ordering, custom colors, and personalization options
                             </div>
                         <a href="#container-axe" data-reveal-id="reveal-axe" style="color: #FFF;">
-                            <button style="width: 70%; margin-left: auto; margin-right: auto;" class="button"> 
-                                 PURCHASE
-                            </button>
+                            <div style="padding-bottom: 30px;">
+                                <button style="width: 70%; margin-left: auto; margin-right: auto;" class="button">
+                                     PURCHASE
+                                </button>
+                            </div>
                         </a>
                 </div>
 
-                <div style="display: flex; flex-direction: column; text-align: center; width: 20%; padding: 0 20px 0 20px;">
+                <div class="section2">
                     <img class="img-style" src="images\signTest.png">
                         <div class="title"> <i> CUSOTM METAL SIGNS </i> </div>
                             <div class="desc">
@@ -330,9 +380,11 @@
                                  From sports themes to unique family crests, the possibilties with our design team are endless! Add LEDs for a unique modern flair
                             </div>
                         <a href="#container-metalSign" data-reveal-id="reveal-metalSign" style="color: #FFF;">
-                            <button style="width: 70%; margin-left: auto; margin-right: auto;" class="button"> 
-                                 PURCHASE
-                            </button>
+                            <div style="padding-bottom: 30px;">
+                                <button style="width: 70%; margin-left: auto; margin-right: auto;" class="button">
+                                     PURCHASE
+                                </button>
+                            </div>
                         </a>
                 </div>
             </div>  
