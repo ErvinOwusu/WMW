@@ -20,13 +20,6 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
 
-
-        .center {
-            margin-left: auto; 
-            margin-right: auto;
-            display: block;
-        }
-
         .icon {
             background-color: rgba(0, 0, 0, .15);
             width: 4rem;
@@ -36,11 +29,68 @@
         }
 
         .flex-row {
-            display: flex; flex-direction: row
+            display: flex; 
+            flex-direction: column;
         }
 
         .title {
-            font-size: 2rem; font-family: 'Rubik', sans-serif; font-weight: 400;
+            font-size: 2rem; 
+            font-family: 'Rubik', sans-serif; 
+            font-weight: 200;
+            text-decoration: underline;
+        }
+
+        .header {
+            text-shadow: 4px 4px 0 #000;
+            text-align: center;
+            font-size: 3.6rem;
+            font-weight: bold;
+            color: #FFF;
+            font-family: 'Rubik', sans-serif;
+            padding-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .about-us-img {
+            width: 900px;
+            margin-left: auto; 
+            margin-right: auto;
+            display: block;
+        }
+
+        .desc {
+            text-align: center; 
+            font-family: 'Rubik', sans-serif;
+            font-weight: 400;
+            color: white;
+            font-size: 24px;
+            display: block;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .content {
+            padding: 0 150px 0 150px;
+            line-height: 40px;
+            text-align: left;
+            font-family: 'Quicksand', sans-serif;
+            color: white;
+            font-size: 22px;
+            font-weight: 200;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .visible {
+            display: block;
+        }
+
+        .header-top {
+            font-family: 'Quicksand', sans-serif;
+            text-align: center;
+            color: #FFF;
+            font-size: 23px;
         }
 
         @media (max-width: 1160px) {
@@ -48,6 +98,42 @@
                 display: flex; 
                 flex-direction: column; 
             }
+
+            .visible {
+                display: none;
+            }
+
+            .header {
+                font-size: 2.5rem;
+                text-align: center;
+            }
+            .desc {
+                font-size: 1.2rem;
+            }
+            .content {
+            padding: 0;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 1.6rem;
+        }
+
+        .about-us-img {
+            width: 90%;
+            margin-left: auto; 
+            margin-right: auto;
+            display: block;
+        }
+
+        .header-top {
+            font-family: 'Quicksand', sans-serif;
+            text-align: center;
+            color: #FFF;
+            font-size: 1rem;
+        }
+
 
         }
     </style>
@@ -75,15 +161,14 @@
     </nav>
     <script type="text/javascript" src="javascript.js"></script>
     
-    <div style="padding:80px 30px 90px 30px; background :#1F1F1F; margin-top:-8px; font-family: &#39;Rubik&#39;, sans-serif;
-         font-size: 23px; text-align: center; font-size: 23px; text-align: left;">
-            <div style="text-shadow: 5px 5px 0 #000; font-size: 4rem; font-weight: bold; line-height: 50px; color: #FFF; font-family: &#39;Quicksand&#39;, sans-serif; padding-bottom: 20px; text-align: center;"> 
+    <div style="padding:80px 30px 90px 30px; background :#1F1F1F;">
+            <div style="font-family: 'Rubik', sans-serif; text-shadow: 2px 2px 0 #000; font-size: 4rem; font-weight: bold; line-height: 50px; color: #FFF; padding-bottom: 20px; text-align: center;"> 
                 ABOUT US 
             </div>
-            <br>
-           <img src="images/about us.png" width="900" class="center"> 
+
+           <div style="padding-top: 20px;"><img class="about-us-img" src="images/about us.png" width="900" class="center"></div> 
            <br>
-           <div style="font-family: &#39;Quicksand&#39;, sans-serif; text-align: center; color: #FFF;"><i>Meet the team behind Woodland Metal Works, a small production team consisting of high school students and teachers </i> </div>
+           <div class="header-top"><i>Meet the team behind Woodland Metal Works, a small production team consisting of high school students and teachers </i> </div>
             <!--
             <div style="padding: 0 5rem 0 5rem">
                 <table>
@@ -111,15 +196,14 @@
     <!---------------------------------------- Marketing/Operations Department ---------------------------------------->
     <div style="padding:90px 30px 60px 30px; background-color: #373737;">
         
-        <div style="text-align: center; font-size: 3.4rem; font-weight: bold; color: #FFF; font-family: &#39;Quicksand&#39;, sans-serif; padding-bottom: 40px; padding-top: 40px;"> 
-        <i> <span style="text-shadow: 4px 4px 0px black;">Marketing/Operations Department</span></i> 
-        <br>
-    <div style="font-family: &#39;Quicksand&#39;, sans-serif; color: white; font-size: 24px; font-weight: normal; display: block; padding: 2rem 12rem 0 12rem;">
+        <div class="header"> 
+            <i>Marketing/Operations Department</i>
+        </div>
+    <div class="desc" style="padding-bottom: 40px;">
         Our Marketing/Operations Department is made up of Sales/Marketing/Customer Service, Accounting/Finance, Shipping/Receiving, Production/Scheduling/Quality Control, and Human Resources.
     </div>
     <br>
-    <div style="display: flex; flex-direction: row;">
-    <div style="padding: 0 150px 0 150px; line-height: 40px; text-align: left; font-family: &#39;Quicksand&#39;, sans-serif; color: #white; font-size: 22px; font-weight: normal; display: block;">
+    <div class="content">
             <div class="title">Sales/Marketing/Customer Service:</div>
             Isabella Markeveys (TL),
             Kalle Legassey,
@@ -127,81 +211,112 @@
             Siana Ajro, and
             Aidan Wolfanger
             <br>
-            
             <br>
+
             <div class="title">Accounting/Finance:<br></div>
             Ryan O’Donnell (TL),
             Bryan Kieffer,
-            Branden Burns, and <br>
-            Gary Gelinas <br>
-            
+            Branden Burns, and
+            Gary Gelinas
             <br>
-             <div class="title">Shipping/Receiving:<br></div>
+            <br>
+
+            <div class="title">Shipping/Receiving:<br></div>
             O’Bed Peppers (TL),
             DeAndre Allen, and
-            Ethan Clark <br>
-            
+            Ethan Clark 
             <br>
-             <div class="title">Production/Scheduling/Quality Control:<br></div>
+            <br>
+
+            <div class="title">Production/Scheduling/Quality Control:<br></div>
             Anthony Butkevicius (TL),
-            Aidan Messore, and <br>
-            Landon Barrows <br>
-            
+            Aidan Messore, and
+            Landon Barrows
             <br>
-             <div class="title">Human Resources:<br></div>
+            <br>
+        
+            <div class="title">Human Resources:<br></div>
             Aden Ianniruberto (TL)
             
         </div>
     </div>
-</div>
-    </div>
 
     <!---------------------------------------- Manufacturing Department ---------------------------------------->
-    <div style="padding:90px 30px 60px 30px; background-color: #1F1F1F">
-        <div style="text-align: center; font-size: 3.4rem; font-weight: bold; color: #FFF; font-family: &#39;Quicksand&#39;, sans-serif; padding-bottom: 40px; padding-top: 40px;"> 
-        <i> <span style="text-shadow: 4px 4px 0px black;">Manufacturing Department</span></i> 
-        <br>
-    <span style="font-family: &#39;Quicksand&#39;, sans-serif; color: white; font-size: 24px; font-weight: normal; display: block; padding: 2rem 12rem 0 12rem;">
+    <section style="padding:90px 30px 60px 30px; background-color: #1F1F1F">
+        <div class="header"> 
+            <i>MANUFACTURING DEPARTMENT</i>
+        </div>
+
+        <div class="desc" style="padding-bottom: 90px;">
         Our Manufacturing Department is made up of CNC - Computer Aided Design, <br>CNC - Lathe, CNC - Milling, Plasma Cutter, and Welding.
+        </div>
 
-
-    </span>
-        <br>
-        <div class="flex-row">
-            <div style="padding-left: 50px;"> 
-                <img src="images/Completed Axe Head.jpg" width="390" align="left"> 
+        <section class="flex-row" style="padding-bottom: 200px;">
+            <div style="padding-left: 50px;" class="visible"> 
+                <img src="images/Completed Axe Head.jpg" width="390"> 
             </div>
-    <div style="padding: 0 150px 0 150px; line-height: 40px; text-align: left; font-family: &#39;Quicksand&#39;, sans-serif; color: #white; font-size: 22px; font-weight: normal; display: block;">
-        
-         <div class="title">CNC - Computer Aided Design:<br></div>
-        Cody Christiano (TL),
-        Vincent Sasso, and 
-        Michael Varesio <br>
-        
-        <br>
-         <div class="title">CNC - Lathe:<br></div>
-        Bianca Sturges (TL) and Laura Whiskeyman <br>
-        
-        <br>
-         <div class="title">CNC - Milling:<br></div>
-        Vanessa Krasnicki (TL) and Edward Acevedo <br>
-        
-        <br>
-         <div class="title">Plasma Cutter:<br></div>
-        Peter Dupre (TL),
-        Nathan Bouffard,
-        Zachary Simpson, and 
-        Nicholas Hummel<br>
-        
-        <br>
-         <div class="title">Welding:<br></div>
-        Edgar Jorge (TL), 
-        Alexander Luddy, and 
-        Nicholas Sciarretto    
-        </div>
-        </div></div>
-        </div>
+
+            <div class="content">
+                <div class="title">CNC - Computer Aided Design:</div>
+                Cody Christiano (TL),
+                Vincent Sasso, and 
+                Michael Varesio 
+                <br>
+                <br>
+
+                <div class="title">CNC - Lathe</div>
+                Bianca Sturges (TL) and Laura Whiskeyman
+                <br>
+                <br>
+
+                <div class="title">CNC - Milling:</div>
+                Vanessa Krasnicki (TL) and Edward Acevedo 
+                <br>
+                <br>
+
+                <div class="title">Plasma Cutter:</div>
+                Peter Dupre (TL),
+                Nathan Bouffard,
+                Zachary Simpson, and 
+                Nicholas Hummel
+                <br>
+                <br>
+
+                <div class="title">Welding:</div>
+                Edgar Jorge (TL), 
+                Alexander Luddy, and 
+                Nicholas Sciarretto    
+            </div>
+        </section>
+    </section>
+
+        <!-------------------------------------------------------- FOOTER -------------------------------------------------------->
+<footer style="background-color: rgba(11, 11, 11, 0.5); padding: 30px 30px 14px 30px; width: 100%; font-family: 'Rubik', sans-serif; color: white; font-size: 1.4rem;">
+    
+    <div style="display: flex; flex-direction: row;">
+        <section style="font-size: 1.2rem; padding-right: 50px; color:rgba(255, 255, 255, 0.5);">
+            <img src="images/wm-black-white.png" class="img-style2">
+            <div style="padding-top: 20px;">Woodland Metal Works</div>
+            <div>Woodland Regional High School</div>
+            <div>135 Back Rimmon Road</div>
+            <div>Beacon Falls, CT 06403</div>
+            <div style="padding-top: 10px; color: white;">203-881-5551</div>
+        </section>
+        <div style="border-right: 2px solid rgba(255, 255, 255, 0.2); height: 300px;"></div>
+
+        <section style="padding-left: 80px;">
+            <div style="font-weight: 600; padding-bottom: 10px;"> NAVIGATION </div>
+            <div style="list-style: none; font-size: .9rem;">
+                <li> <a class="link-color" href="products3.html">PRODUCTS</a> </li>
+                <li> <a class="link-color" href="faq.html">FAQ</a> </li>
+                <li> <a class="link-color" href="contactus2.html">CONTACT US </a></li>
+                <li> <a class="link-color" href="contactus2.html">ABOUT US </a></li>
+            </div>
     </div>
 
+    <div style="width: 100%; color: rgba(255, 255, 255, 0.6); text-align: center; font-size: 1.0rem;"> Copyright © 2022 Woodland Metal Worls. All Rights Reserved </div>
+</footer>
     </body>
+
+    
 </html>

@@ -40,9 +40,9 @@ a {
 a:hover {
     color: #f7dda1;
 }
+
 .contactDetails{
     color: white;
-    margin: 0.4rem;
 }
 
 .aboutUs {
@@ -104,4 +104,9 @@ a:hover {
     transition: filter .3s;
 }
 
-
+.link-color {
+    color: rgba(240, 165, 0, 0.9);
+}
+.img-style2 {
+    width: 120px;
+}
