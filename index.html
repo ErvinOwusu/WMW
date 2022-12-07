@@ -36,7 +36,7 @@
             text-align: center; 
             color: white; 
             font-family: 'Rubik', sans-serif;
-            font-size: 1.7rem; 
+            font-size: 1.5rem; 
             font-weight: normal; 
             display: block;
             padding: 0 4rem 2rem 4rem; 
@@ -44,23 +44,13 @@
         }
         .desc1 {
             padding: 0 20px 0 20px; 
-            line-height: 3.7rem; 
+            line-height: 3.2rem; 
             text-align: center; 
             font-family: 'Quicksand', sans-serif; 
             color: white; 
-            font-size: 2rem;
+            font-size: 1.7rem;
             font-weight: 200;
             display: block;
-            padding: 20px 100px;
-        }
-
-        .img-style {
-            align-self: center; 
-            max-width: 400px; 
-            flex: 50%; 
-            margin-left: auto; 
-            margin-right: auto; 
-            padding-left: 0px;
         }
 
         .button-seeAll {
@@ -70,12 +60,11 @@
             border-radius: 5px; 
             color: white; 
             padding: 2px 50px 2px 50px;
-            transition: color .2s, border-color .3s;
+            transition: color .2s;
         }
 
         .button-seeAll:hover {
             color: #f0a500;
-            border-color: #e9b33d;
             cursor: pointer;
         }
         .button-seeProducts {
@@ -105,81 +94,48 @@
             padding: 0 80px 0 80px;
             
         }
-
-        .heading {
-            font-size: 1.3rem; 
-            font-family: 'Quicksand', sans-serif; 
-            text-shadow: 2px 2px 0 #000; 
-            color: #FFF;
+        
+        .img-style {
+            align-self: center;
         }
         
-        @media (max-width: 1160px) {
-
+        @media (max-width: 800px) {
           .flex-row {
+        flex-direction: column;
+        padding: 0;
+      }
+}
+        .flex-col {
+            display: flex;
             flex-direction: column;
-            padding: 0;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem 1rem;
         }
-        .flex-img {
-            width: 60%;
+        
+         @media (max-width: 800px) {
+             .flex-img {
+                 width: 500px;
+             }
+             
+             .img-style {
+            align-self: center;
+            margin-left: auto;
+            margin-right: auto;
         }
+        
         .desc1 {
             padding: 0 20px 0 20px; 
             line-height: 3.2rem; 
             text-align: center; 
             font-family: 'Quicksand', sans-serif; 
             color: white; 
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             font-weight: 200;
             display: block;
+            line-height: 35px;
         }
-
-        .title2 {
-            text-align: center; 
-            color: white; 
-            font-family: 'Rubik', sans-serif;
-            font-size: 1.4rem; 
-            font-weight: normal; 
-            display: block;
-            padding: 0 4rem 2rem 4rem; 
-            text-shadow: 2px 2px 0 #000;
-        }
-
-        .title1 {
-            padding-bottom: 20px;
-            padding-top: 40px; 
-            font-size: 4.0rem;
-            font-weight: bold;
-            font-family: 'Rubik', sans-serif;
-            font-weight: 600;
-            text-shadow: 2.5px 2.5px 0 black;
-            text-align: center; 
-            color: #FFF; 
-        }
-
-        .img-style {
-            align-self: center; 
-            max-width: 350px; 
-            flex: 50%; 
-            margin-left: auto; 
-            margin-right: auto; 
-            padding-left: 0px;
-        }
-
-        .button-seeProducts {
-            border-radius: 3px;
-            color: white;
-            font-size: 2rem;
-            font-size: 1.1rem; 
-            border: 1px solid white;
-            background: 0; 
-            border-radius: 3em; 
-            color: white; 
-            padding: 12px 60px;
-            border: 3px solid rgba(255, 255, 255);
-            cursor: pointer;
-            transition: color .3s, border-color .3s;
-            font-family: 'Rubik', sans-serif;
-        }
+         }
 }
     </style>
     </head>
@@ -230,8 +186,8 @@
                 <div style="text-align: center; font-size: 4rem; font-weight: bold; color: white; line-height: 1rem;">
                     <img class="flex-img" src="images\Main Logo(4).png" width="650"> 
                     <br>
-                    <div class="heading"> The first and only sutdent-led small production 
-                    in the United States that features advanced manufacturing</div>
+                    <span style="font-size: 1.5rem; font-family: 'Quicksand', sans-serif; text-shadow: 2px 2px 0 #000; color: #FFF;"> The first and only sutdent-led small production 
+                    in the United States that features advanced manufacturing</span>
                     <a href="products3.html"> <div style="padding-top: 1.5rem;"> <button class="button-seeProducts link-hover"> SEE PRODUCTS </button> </div> </a>
                     
                 </div>
@@ -241,7 +197,7 @@
         
     
     <!---------------------------------------- SECTION #2 ---------------------------------------->
-    <div class="section" style="background-image: url('images/tools pattern.png'); display: block;">
+    <div class="section" style="background-image: url('images/tools pattern.png');">
         
     <div class="title1"> <i>OUR MISSION</i></div> 
     <div class="title2">
@@ -249,8 +205,8 @@
     </div>
 
         <div class="flex-row">
-            <img  src="images/Welding of Axe Head.jpg" class="img-style"> 
-            <div class="desc1" style="flex: 50%;">
+            <img src="images/Welding of Axe Head.jpg" style="align-self: center; max-width: 350px; flex: 50%; margin-left: auto; margin-right: auto; padding-left: 0px;"> 
+            <div class="desc1" style="padding: 0 20px; flex: 50%;">
                 Turn your ideas into a forged treasure. With our custom-made metal signs we have the ability to create a product that will
                 reflect your personality. our luminous powder coated finish gaurantees any design will be perfect for the space you are
                 creating. From sports themes to unique family crests, the posibilities with our design team are endless! Add LEDs for a unique modern flair.
@@ -261,7 +217,6 @@
         </div>
     </div>
     <!---------------------------------------- SECTION #3 ---------------------------------------->
-    
     <div class="section" style="background-color: #1F1F1F; background-image: url('images/welding pattern.png'); display: block;">
         
         <div class="title1"> <i>OUR VISION</i></div> 
@@ -270,64 +225,18 @@
         </div>
     
             <div class="flex-row"> 
-                <div class="desc1" style="flex: 50%;">
+                <div class="desc1" style="flex: 50%; padding-bottom: 20px;">
                     Cut through the competiton. The only premium American-Made competition axe on the market, sold at an affordable price with uncompromising quality and durability. 
                     Designed to last and handcrafted in our state-of-the-art facility using only the finest cold-rolled steel and hickory handle.
                     Includes a pinned head to ensure safety and offered in two sizes (Heavy and Light). Balanced for precision throwing to nail the bullseye every time.
                     Reach out to our team to discuss bulk ordering, custom colors, and personalization options.
                     
                 </div>
-                <img  src="images/Welding 2.jpg" class="img-style">
+                <img  width="350" src="images/Welding 2.jpg" class="img-style">
             </div>
         </div>
-    <!--
-    <div style="padding:90px 30px 60px 30px; background-color: #1F1F1F; background-image: url('images/welding pattern.png');">
-        <div style="text-align: center; font-size: 3rem; font-weight: bold; color: #FFF; font-family: 'Quicksand', sans-serif; padding-bottom: 20px; padding-top: 40px;"> 
-            <i> <span class="title1">OUR VISION</span></i> 
-                <br>
-            <span style="font-family: 'Rubik', sans-serif; font-size: 1.7rem; font-weight: normal; display: block; padding: 0 12rem 4rem 12rem; text-shadow: 2px 2px 0 #000;">
-                To supply end users, custom metal fabrication products, ranging from competition level axes to powder coated metal signs.
-            </span>
-            <br>
-            <div class="flex-row">
-                
-        <div class="desc1" style="padding: 0 30px 0 150px;">
-            Cut through the competiton. The only premium American-Made competition axe on the market, sold at an affordable price with uncompromising quality and durability. 
-            Designed to last and handcrafted in our state-of-the-art facility using only the finest cold-rolled steel and hickory handle.
-            Includes a pinned head to ensure safety and offered in two sizes (Heavy and Light). Balanced for precision throwing to nail the bullseye every time.
-            Reach out to our team to discuss bulk ordering, custom colors, and personalization options.
-                </div>
-                <div style="padding-right: 200px;"> <img src="images/Welding 2.jpg" width="390"> </div>
-                </div>
-        </div>
-    </div>
--->
-
-<!-------------------------------------------------------- FOOTER -------------------------------------------------------->
-<footer style="background-color: rgba(11, 11, 11, 0.5); padding: 30px 30px 14px 30px; width: 100%; font-family: 'Rubik', sans-serif; color: white; font-size: 1.4rem;">
     
-    <div style="display: flex; flex-direction: row;">
-        <section style="font-size: 1.2rem; padding-right: 50px; color:rgba(255, 255, 255, 0.5);">
-            <img src="images/wm-black-white.png" class="img-style2">
-            <div style="padding-top: 20px;">Woodland Metal Works</div>
-            <div>Woodland Regional High School</div>
-            <div>135 Back Rimmon Road</div>
-            <div>Beacon Falls, CT 06403</div>
-            <div style="padding-top: 10px; color: white;">203-881-5551</div>
-        </section>
-        <div style="border-right: 2px solid rgba(255, 255, 255, 0.2); height: 300px;"></div>
 
-        <section style="padding-left: 80px;">
-            <div style="font-weight: 600; padding-bottom: 10px;"> NAVIGATION </div>
-            <div style="list-style: none; font-size: .9rem;">
-                <li> <a class="link-color" href="products3.html">PRODUCTS</a> </li>
-                <li> <a class="link-color" href="faq.html">FAQ</a> </li>
-                <li> <a class="link-color" href="contactus2.html">CONTACT US </a></li>
-                <li> <a class="link-color" href="contactus2.html">ABOUT US </a></li>
-            </div>
-    </div>
-
-    <div style="width: 100%; color: rgba(255, 255, 255, 0.6); text-align: center; font-size: 1.0rem;"> Copyright © 2022 Woodland Metal Worls. All Rights Reserved </div>
-</footer>
     </body>
+    
 </html>
